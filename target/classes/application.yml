@@ -1,0 +1,7 @@
+server:
+  port: 9000
+zuul:
+  routes:
+    #source含義就是，只要請求地址中含有source的，都走這個轉發邏輯。因此這一層可以隨便寫
+    source:
+      url: http://localhost:8080
